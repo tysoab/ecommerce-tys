@@ -1,0 +1,37 @@
+.cart{
+  list-style:  none;
+}
+
+.cart a{
+  color: #000;
+  text-decoration: none;
+}
+
+.cart a:hover{
+  color: rgb(206, 135, 4);
+}
+
+.cart .cartContainer{
+  position: relative;
+}
+
+.cartContainer img{
+  width: 20px;
+  opacity: 0.8;
+}
+
+.cartContainer .count{
+  position: absolute;
+  top: -5px;
+  right: -6px;
+  color: #ff0000;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+@media (max-width: 700px){
+  .cart{
+    display: inline-flex;
+    float: left;
+  }
+}

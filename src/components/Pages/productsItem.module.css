@@ -1,0 +1,25 @@
+.productsItem{
+  width: 90%;
+}
+
+.productsItem img{
+  width: 100%;
+  height: 200px;
+}
+
+.productsItem .title{
+  font-size: 16px;
+  margin: 20px 0;
+  color: #534a4a;
+}
+
+.productsItem .actions{
+  display: flex;
+  justify-content:  space-between;
+  align-items: center;
+}
+
+.productsItem .actions div p{
+  font-size: 15px;
+  font-weight: 600;
+}

@@ -1,0 +1,55 @@
+.button-container{
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+font-size: 15px;
+margin-top: 30px;
+}
+
+.button-container a{
+  padding: 7px 7px;
+  border: 0;
+  background-color: transparent;
+  color: #494848;
+  font-size: 14px;
+  text-decoration: none;
+  font-style: italic;
+}
+
+.form-group{
+  margin-top: 20px;
+}
+
+.form-controls{
+  margin: 20px 0;
+  font-size: 15px;
+}
+
+.form-controls label{
+  display: block;
+  margin-bottom: 10px;
+}
+
+.form-controls label span{
+  color: #ff0000;
+}
+
+.form-controls input{
+  padding: 5px 10px;
+  border:1px solid #ccc;
+  outline: none;
+  min-width: 50%;
+  border-radius: 6px;
+}
+
+.disabledBtn{
+  background-color: #e4dede;
+  cursor: default;
+}
+
+
+@media (max-width: 700px){
+  .form-controls input{
+    width: 100%;
+  }
+}

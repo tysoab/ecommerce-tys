@@ -1,0 +1,41 @@
+.productsList{
+  display: grid;
+  grid-template-columns: 100px 1fr 150px;
+  gap: 25px;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #ccc;
+  padding: 20px 0;
+}
+
+.productsList img{
+  width: 100%;
+}
+
+
+.productsList a{
+  text-decoration: none;
+  color: #474747;
+}
+
+.productsList a:hover{
+  color: rgb(206, 135, 4);
+}
+
+.productsList div{
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  gap: 20px;
+}
+
+@media (max-width: 700px){
+  .productsList{
+    width: 90%;
+    margin: auto;
+    grid-template-columns: 1fr;
+  }
+
+  .productsList img{
+    width: 90%;
+  }
+}

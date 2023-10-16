@@ -1,0 +1,21 @@
+.searchBar{
+  flex: 1;
+  display: flex;
+  gap: 5px;
+}
+
+.searchBar input{
+  padding: 7px 20px;
+  flex: 1;
+  border:  1px solid #ccc;
+  outline: 0;
+  color: #3a3939;
+  font-size: 15px;
+  background-color: transparent;
+}
+
+@media (max-width: 700px){
+  .searchBar{
+    margin-top: 50px;
+  }
+}

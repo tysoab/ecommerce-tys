@@ -1,0 +1,48 @@
+.cartList-container{
+  display: flex;
+  gap: 25px;
+  margin-top: 50px;
+}
+
+.cartList-container img{
+  flex-basis: 50px;
+  height: 50px;
+}
+
+.cartList-container h3{
+  font-size: 15px;
+}
+
+.cartList-container h4{
+  font-size: 16px;
+}
+
+.cartList-container .deleteIcon{
+  height: 25px;
+  cursor: pointer;
+}
+
+.cartList-container div{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cartList-container div:last-child{
+  display: unset;
+}
+
+.cartList-container .title{
+  flex: 1;
+}
+
+.quantity-action{
+  text-align: right;
+}
+.cartList-container .quantity-action span{
+  padding: 5px;
+  font-size: 20px;
+  font-weight: 600;
+  color: rgb(206, 135, 4);
+  cursor: pointer;
+}

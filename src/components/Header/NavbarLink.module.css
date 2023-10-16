@@ -1,0 +1,28 @@
+.navlink{
+  display: flex;
+  gap: 20px;
+}
+
+.navlink li{
+  list-style: none;
+}
+
+.navlink li a{
+  color: #000;
+  text-decoration: none;
+}
+
+.navlink li a:hover,
+.navlink li .active{
+  color: rgb(206, 135, 4);
+}
+
+@media (max-width: 700px){
+  .navlink{
+    display: block;
+  }
+
+  .navlink li{
+    margin-top: 20px;
+  }
+}

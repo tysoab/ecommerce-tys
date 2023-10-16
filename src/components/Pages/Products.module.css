@@ -1,0 +1,13 @@
+.filter{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.filter select{
+  border: 1px solid #000;
+  outline: none;
+  padding: 7px 7px;
+  font-size: 14px;
+}

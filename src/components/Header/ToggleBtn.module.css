@@ -1,0 +1,12 @@
+.toggleBtn{
+  text-align: right;
+  font-size: 25px;
+  cursor: pointer;
+  display: none;
+}
+
+@media (max-width: 700px){
+  .toggleBtn{
+    display: block;
+  }
+}

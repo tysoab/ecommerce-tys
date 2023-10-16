@@ -1,0 +1,17 @@
+.menu{
+  display: none;
+}
+
+.menu img{
+  width: 30px;
+  cursor: pointer;
+  border: 0;
+  background-color: transparent;
+}
+
+@media (max-width: 700px){
+  .menu{
+    display: inline-flex;
+    float: right;
+  }
+}

@@ -1,0 +1,33 @@
+.totalP{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.carts{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.carts button{
+  padding: 7px 15px;
+  border: 0;
+  background-color: rgb(206, 135, 4);
+  color: #f9f9f9;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.carts button img{
+  height: 20px;
+}
+
+.continueS{
+  color: rgb(206, 135, 4);
+  font-style: italic;
+  cursor: pointer;
+  font-weight: 600;
+}
