@@ -16,6 +16,9 @@ const RootLayout = function(){
     <main className={classes.main}>
     <Outlet />
     </main>
+    <footer>
+      <p>designed by tysoab || tysoab@gmail.com </p>
+    </footer>
     </>
   );
 };
