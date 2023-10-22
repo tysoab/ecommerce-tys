@@ -1,5 +1,3 @@
-import { useContext } from "react";
-
   export const addToCartHandler = (data, cartCtx)=>{
     const item = {
       id: data.id,
@@ -9,5 +7,7 @@ import { useContext } from "react";
       quantity: 1
     };
     cartCtx.addToCart(item);
+    cartCtx.addedToCartHandler();
+    console.log(cartCtx.showAddedToCart)
 
   };

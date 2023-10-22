@@ -25,9 +25,11 @@ const CartDetail = function(){
     content = cart.map(cart => <CartList key={cart.id} cart={cart} />);
   }
 
+  let sumTotal = +(cart.reduce((acc, item) => acc + (item.quantity * item.price) ,0)).toFixed(2);
+  
   let TotalPrice = <div className={classes.totalP}>
     <h2>Total Price:</h2>
-    <h3>$ {(cart.reduce((acc, item) => acc + (item.quantity * item.price) ,0)).toFixed(2)}</h3>
+    <h3>$ {sumTotal}</h3>
   </div>
 
   return <>
@@ -43,9 +45,11 @@ const CartDetail = function(){
     </div>
     {content}
   </ContentWrapper>
-  <ContentWrapper>
+  {sumTotal !== 0 && 
+    <ContentWrapper>
     {TotalPrice}
   </ContentWrapper>
+  }
   <ContentWrapper>
     <p onClick={()=> navigate('../')} className={classes.continueS}>Continue shopping</p>
   </ContentWrapper>

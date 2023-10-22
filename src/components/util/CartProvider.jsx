@@ -87,6 +87,7 @@ if(action.type === 'EMPTY'){
 const CartProvider = function(props){
 
   const [isToggle, setIsToggle] = useState(false);
+  const [showAddedToCart, setShowAddedToCart] = useState(false);
   const [cart, setCart] = useState([]);
   const [cartState, dispatchState] = useReducer(cartReducer, initialState);
   
@@ -100,6 +101,16 @@ const CartProvider = function(props){
 
 
   const toggleHandler = ()=> setIsToggle(preState => !preState);
+
+  const addedToCartHandler = ()=>{
+    setShowAddedToCart(true);
+    let intervalId;
+    clearTimeout(intervalId);
+    intervalId = setTimeout(()=>{
+      setShowAddedToCart(false);
+    }, 2500);
+
+  };
 
   const isCartAvailable = (item)=>{
     dispatchState({type: 'CHECK', val: item});
@@ -124,7 +135,9 @@ const CartProvider = function(props){
   const cartContext ={
     cart: cart || [],
     isToggle,
+    showAddedToCart,
     toggleHandler,
+    addedToCartHandler,
     addToCart,
     reduceCart,
     removeCartItem: deleteCartItem,

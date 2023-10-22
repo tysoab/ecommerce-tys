@@ -1,0 +1,11 @@
+.addedToCart{
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 5px 7%;
+  background-color: #90f590;
+  color: #3b7a3b;
+
+  z-index: 1000;
+}

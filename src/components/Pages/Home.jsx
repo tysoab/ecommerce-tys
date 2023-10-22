@@ -4,6 +4,7 @@ import ProductsItem from "./ProductsItem";
 
 import classes from './Home.module.css';
 import ContentWrapper from "../UI/content-wrapper";
+import ProductsCat from "./ProductsCat";
 
 const HomePage = function(){
 
@@ -26,8 +27,11 @@ const HomePage = function(){
     content = copyOfData.map(product => <ProductsItem key={product.id} product={product} />)
   }
 
-  return <ContentWrapper className={classes['product-container']}>
+  return <>
+  <ContentWrapper className={classes['product-container']}>
   {content}
   </ContentWrapper>
+  <ProductsCat category='jewelery'/>
+  </>
 };
 export default HomePage;

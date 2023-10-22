@@ -1,0 +1,11 @@
+.productsCat{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 50px;
+  margin-top: 70px;
+}
+
+.title{
+  margin-bottom: 30px;
+  font-size: 18px;
+}
