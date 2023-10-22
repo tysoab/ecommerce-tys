@@ -31,6 +31,7 @@ const HomePage = function(){
   <ContentWrapper className={classes['product-container']}>
   {content}
   </ContentWrapper>
+  <ProductsCat category='electronics'/>
   <ProductsCat category='jewelery'/>
   </>
 };

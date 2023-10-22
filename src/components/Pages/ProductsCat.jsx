@@ -32,7 +32,7 @@ const ProductsCat = function({category}){
     content = data.map(product => <ProductsItem key={product.id} product={product} />);
   }
 
-  return <ContentWrapper>
+  return <ContentWrapper className={classes['productsCat-container']}>
     <h2 className={classes.title}>{category}</h2>
     <main className={classes.productsCat}>
       {content}
